@@ -2,6 +2,13 @@
 
 All notable changes to `oj_windows` will be documented in this file.
 
+## [Unreleased]
+
+### Changed
+- Pinned the `bigdecimal` (`~> 3.0`) and `ostruct` (`~> 0.2`) runtime dependencies
+  instead of the open-ended `>=`, silencing the RubyGems `gem build` advisories.
+  (Cosmetic only; no effect on installs of 3.17.2.1.)
+
 ## [3.17.2.1] - 2026-05-29
 
 Fork revision based on upstream Oj 3.17.2. The version is `3.17.2.1` (not plain
