@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build & test (Windows MSVC / mswin)
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # ruby/setup-ruby's "mswin" build is Ruby compiled with the MSVC toolchain
+      # (the platform this gem targets) and also sets up the VS build environment.
+      - name: Set up MSVC (mswin) Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: mswin
+
+      - name: Show toolchain
+        shell: bash
+        run: |
+          ruby -v
+          ruby -e "require 'rbconfig'; puts RbConfig::CONFIG['CC'], RbConfig::CONFIG['arch']"
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Compile extension
+        run: bundle exec rake compile
+
+      - name: Run core test suite
+        shell: bash
+        working-directory: test
+        run: |
+          set -e
+          for t in test_various test_strict test_compat test_object test_fast \
+                   test_saj test_scp test_gc test_writer test_file test_hash \
+                   test_parser_usual test_custom test_null test_wab \
+                   test_generate test_integer_range test_long_strings; do
+            echo "::group::$t"
+            ruby "$t.rb"
+            echo "::endgroup::"
+          done
+
+      # Prove the published artifact compiles cleanly against the Ruby headers
+      # alone (no vcpkg, no special environment) on a fresh machine.
+      - name: Verify clean gem install
+        shell: bash
+        run: |
+          set -e
+          gem build oj_windows.gemspec
+          gem install ./oj_windows-*.gem
+          ruby -e "require 'oj_windows'; raise 'parse' unless Oj.load('[1,2,3]') == [1,2,3]; puts 'installed oj_windows ' + Oj::VERSION + ' OK'"

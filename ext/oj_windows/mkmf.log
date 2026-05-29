@@ -1,0 +1,226 @@
+have_func: checking for rb_gc_mark_movable()... -------------------- yes
+
+PATH=".;C:/RubyMSVC34/lib;C:\RubyMSVC34\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\18\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\\x64;C:\Program Files (x86)\Windows Kits\10\bin\\x64;C:\Program Files\Microsoft Visual Studio\18\Community\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\LLVM\bin;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Git-Xet\;C:\Program Files (x86)\IncrediBuild;C:\Users\leiz\.local\bin;C:\Program Files\wooting-analog-sdk\;C:\Program Files\doxygen\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.1.1\;C:\Program Files\Git\cmd;C:\Program Files\Memurai\;C:\Users\leiz\AppData\Local\Programs\Python\Python312;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\leiz\.cargo\bin;C:\Users\leiz\.lmstudio\bin;C:\Users\leiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leiz\AppData\Local\Programs\Antigravity\bin;C:\Users\leiz\AppData\Local\Programs\Ollama;C:\Users\leiz\AppData\Local\GitHubDesktop\bin;C:\Users\leiz\.local\bin;C:\Users\leiz\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\leiz\.dotnet\tools;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\18\Community\VC\vcpkg" ASAN_OPTIONS=detect_leaks=0 "cl -nologo -Feconftest -IC:/RubyMSVC34/include/ruby-3.4.0/x64-mswin64_140 -IC:/RubyMSVC34/include/ruby-3.4.0/ruby/backward -IC:/RubyMSVC34/include/ruby-3.4.0 -I. -IC:/RubyMSVC34/include/ruby-3.4.0 -IC:/Users/leiz/vcpkg/installed/x64-windows/include  -D_WIN32_WINNT=_WIN32_WINNT_WIN8   -MD -Zi -W2 -wd4100 -wd4127 -wd4210 -wd4214 -wd4255 -wd4574  -wd4668 -wd4710 -wd4711 -wd4820 -wd4996  -we4028 -we4142 -we4047 -we4013 -wd5287 -O2sy- -Zc:inline -Zm600  conftest.c   x64-vcruntime140-ruby340.lib  user32.lib  -link -incremental:no -debug -opt:ref -opt:icf -manifest:embed,ID=2  -libpath:. -libpath:C:/RubyMSVC34/lib -libpath:C:/Users/leiz/vcpkg/installed/x64-windows/lib "
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: int main(int argc, char **argv)
+13: {
+14:   return !!argv[argc];
+15: }
+/* end */
+
+PATH=".;C:/RubyMSVC34/lib;C:\RubyMSVC34\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\18\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\\x64;C:\Program Files (x86)\Windows Kits\10\bin\\x64;C:\Program Files\Microsoft Visual Studio\18\Community\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\LLVM\bin;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Git-Xet\;C:\Program Files (x86)\IncrediBuild;C:\Users\leiz\.local\bin;C:\Program Files\wooting-analog-sdk\;C:\Program Files\doxygen\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.1.1\;C:\Program Files\Git\cmd;C:\Program Files\Memurai\;C:\Users\leiz\AppData\Local\Programs\Python\Python312;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\leiz\.cargo\bin;C:\Users\leiz\.lmstudio\bin;C:\Users\leiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leiz\AppData\Local\Programs\Antigravity\bin;C:\Users\leiz\AppData\Local\Programs\Ollama;C:\Users\leiz\AppData\Local\GitHubDesktop\bin;C:\Users\leiz\.local\bin;C:\Users\leiz\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\leiz\.dotnet\tools;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\18\Community\VC\vcpkg" ASAN_OPTIONS=detect_leaks=0 "cl -nologo -Feconftest -IC:/RubyMSVC34/include/ruby-3.4.0/x64-mswin64_140 -IC:/RubyMSVC34/include/ruby-3.4.0/ruby/backward -IC:/RubyMSVC34/include/ruby-3.4.0 -I. -IC:/RubyMSVC34/include/ruby-3.4.0 -IC:/Users/leiz/vcpkg/installed/x64-windows/include  -D_WIN32_WINNT=_WIN32_WINNT_WIN8   -MD -Zi -W2 -wd4100 -wd4127 -wd4210 -wd4214 -wd4255 -wd4574  -wd4668 -wd4710 -wd4711 -wd4820 -wd4996  -we4028 -we4142 -we4047 -we4013 -wd5287 -O2sy- -Zc:inline -Zm600  conftest.c   x64-vcruntime140-ruby340.lib  user32.lib  -link -incremental:no -debug -opt:ref -opt:icf -manifest:embed,ID=2  -libpath:. -libpath:C:/RubyMSVC34/lib -libpath:C:/Users/leiz/vcpkg/installed/x64-windows/lib "
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: extern int t(void);
+15: int main(int argc, char **argv)
+16: {
+17:   if (argc > 1000000) {
+18:     int (* volatile tp)(void)=(int (*)(void))&t;
+19:     printf("%d", (*tp)());
+20:   }
+21: 
+22:   return !!argv[argc];
+23: }
+24: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_mark_movable; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for stpcpy()... -------------------- no
+
+PATH=".;C:/RubyMSVC34/lib;C:\RubyMSVC34\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\18\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\\x64;C:\Program Files (x86)\Windows Kits\10\bin\\x64;C:\Program Files\Microsoft Visual Studio\18\Community\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\LLVM\bin;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Git-Xet\;C:\Program Files (x86)\IncrediBuild;C:\Users\leiz\.local\bin;C:\Program Files\wooting-analog-sdk\;C:\Program Files\doxygen\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.1.1\;C:\Program Files\Git\cmd;C:\Program Files\Memurai\;C:\Users\leiz\AppData\Local\Programs\Python\Python312;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\leiz\.cargo\bin;C:\Users\leiz\.lmstudio\bin;C:\Users\leiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leiz\AppData\Local\Programs\Antigravity\bin;C:\Users\leiz\AppData\Local\Programs\Ollama;C:\Users\leiz\AppData\Local\GitHubDesktop\bin;C:\Users\leiz\.local\bin;C:\Users\leiz\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\leiz\.dotnet\tools;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\18\Community\VC\vcpkg" ASAN_OPTIONS=detect_leaks=0 "cl -nologo -Feconftest -IC:/RubyMSVC34/include/ruby-3.4.0/x64-mswin64_140 -IC:/RubyMSVC34/include/ruby-3.4.0/ruby/backward -IC:/RubyMSVC34/include/ruby-3.4.0 -I. -IC:/RubyMSVC34/include/ruby-3.4.0 -IC:/Users/leiz/vcpkg/installed/x64-windows/include  -D_WIN32_WINNT=_WIN32_WINNT_WIN8   -MD -Zi -W2 -wd4100 -wd4127 -wd4210 -wd4214 -wd4255 -wd4574  -wd4668 -wd4710 -wd4711 -wd4820 -wd4996  -we4028 -we4142 -we4047 -we4013 -wd5287 -O2sy- -Zc:inline -Zm600  conftest.c   x64-vcruntime140-ruby340.lib  user32.lib  -link -incremental:no -debug -opt:ref -opt:icf -manifest:embed,ID=2  -libpath:. -libpath:C:/RubyMSVC34/lib -libpath:C:/Users/leiz/vcpkg/installed/x64-windows/lib "
+conftest.c
+conftest.c(24): error C2065: 'stpcpy': undeclared identifier
+conftest.c(24): warning C4312: 'type cast': conversion from 'int' to 'void (__cdecl *)()' of greater size
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: extern int t(void);
+15: int main(int argc, char **argv)
+16: {
+17:   if (argc > 1000000) {
+18:     int (* volatile tp)(void)=(int (*)(void))&t;
+19:     printf("%d", (*tp)());
+20:   }
+21: 
+22:   return !!argv[argc];
+23: }
+24: int t(void) { void ((*volatile p)()); p = (void ((*)()))stpcpy; return !p; }
+/* end */
+
+PATH=".;C:/RubyMSVC34/lib;C:\RubyMSVC34\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\18\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\\x64;C:\Program Files (x86)\Windows Kits\10\bin\\x64;C:\Program Files\Microsoft Visual Studio\18\Community\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\LLVM\bin;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Git-Xet\;C:\Program Files (x86)\IncrediBuild;C:\Users\leiz\.local\bin;C:\Program Files\wooting-analog-sdk\;C:\Program Files\doxygen\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.1.1\;C:\Program Files\Git\cmd;C:\Program Files\Memurai\;C:\Users\leiz\AppData\Local\Programs\Python\Python312;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\leiz\.cargo\bin;C:\Users\leiz\.lmstudio\bin;C:\Users\leiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leiz\AppData\Local\Programs\Antigravity\bin;C:\Users\leiz\AppData\Local\Programs\Ollama;C:\Users\leiz\AppData\Local\GitHubDesktop\bin;C:\Users\leiz\.local\bin;C:\Users\leiz\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\leiz\.dotnet\tools;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\18\Community\VC\vcpkg" ASAN_OPTIONS=detect_leaks=0 "cl -nologo -Feconftest -IC:/RubyMSVC34/include/ruby-3.4.0/x64-mswin64_140 -IC:/RubyMSVC34/include/ruby-3.4.0/ruby/backward -IC:/RubyMSVC34/include/ruby-3.4.0 -I. -IC:/RubyMSVC34/include/ruby-3.4.0 -IC:/Users/leiz/vcpkg/installed/x64-windows/include  -D_WIN32_WINNT=_WIN32_WINNT_WIN8   -MD -Zi -W2 -wd4100 -wd4127 -wd4210 -wd4214 -wd4255 -wd4574  -wd4668 -wd4710 -wd4711 -wd4820 -wd4996  -we4028 -we4142 -we4047 -we4013 -wd5287 -O2sy- -Zc:inline -Zm600  conftest.c   x64-vcruntime140-ruby340.lib  user32.lib  -link -incremental:no -debug -opt:ref -opt:icf -manifest:embed,ID=2  -libpath:. -libpath:C:/RubyMSVC34/lib -libpath:C:/Users/leiz/vcpkg/installed/x64-windows/lib "
+conftest.c
+conftest.obj : error LNK2019: unresolved external symbol stpcpy referenced in function t
+conftest.exe : fatal error LNK1120: 1 unresolved externals
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: extern int t(void);
+15: int main(int argc, char **argv)
+16: {
+17:   if (argc > 1000000) {
+18:     int (* volatile tp)(void)=(int (*)(void))&t;
+19:     printf("%d", (*tp)());
+20:   }
+21: 
+22:   return !!argv[argc];
+23: }
+24: extern void stpcpy();
+25: int t(void) { stpcpy(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_enc_interned_str()... -------------------- yes
+
+PATH=".;C:/RubyMSVC34/lib;C:\RubyMSVC34\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\18\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\\x64;C:\Program Files (x86)\Windows Kits\10\bin\\x64;C:\Program Files\Microsoft Visual Studio\18\Community\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\LLVM\bin;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Git-Xet\;C:\Program Files (x86)\IncrediBuild;C:\Users\leiz\.local\bin;C:\Program Files\wooting-analog-sdk\;C:\Program Files\doxygen\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.1.1\;C:\Program Files\Git\cmd;C:\Program Files\Memurai\;C:\Users\leiz\AppData\Local\Programs\Python\Python312;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\leiz\.cargo\bin;C:\Users\leiz\.lmstudio\bin;C:\Users\leiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leiz\AppData\Local\Programs\Antigravity\bin;C:\Users\leiz\AppData\Local\Programs\Ollama;C:\Users\leiz\AppData\Local\GitHubDesktop\bin;C:\Users\leiz\.local\bin;C:\Users\leiz\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\leiz\.dotnet\tools;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\18\Community\VC\vcpkg" ASAN_OPTIONS=detect_leaks=0 "cl -nologo -Feconftest -IC:/RubyMSVC34/include/ruby-3.4.0/x64-mswin64_140 -IC:/RubyMSVC34/include/ruby-3.4.0/ruby/backward -IC:/RubyMSVC34/include/ruby-3.4.0 -I. -IC:/RubyMSVC34/include/ruby-3.4.0 -IC:/Users/leiz/vcpkg/installed/x64-windows/include  -D_WIN32_WINNT=_WIN32_WINNT_WIN8   -MD -Zi -W2 -wd4100 -wd4127 -wd4210 -wd4214 -wd4255 -wd4574  -wd4668 -wd4710 -wd4711 -wd4820 -wd4996  -we4028 -we4142 -we4047 -we4013 -wd5287 -O2sy- -Zc:inline -Zm600  conftest.c   x64-vcruntime140-ruby340.lib  user32.lib  -link -incremental:no -debug -opt:ref -opt:icf -manifest:embed,ID=2  -libpath:. -libpath:C:/RubyMSVC34/lib -libpath:C:/Users/leiz/vcpkg/installed/x64-windows/lib "
+conftest.c
+conftest.c(24): error C2065: 'rb_enc_interned_str': undeclared identifier
+conftest.c(24): warning C4312: 'type cast': conversion from 'int' to 'void (__cdecl *)()' of greater size
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: extern int t(void);
+15: int main(int argc, char **argv)
+16: {
+17:   if (argc > 1000000) {
+18:     int (* volatile tp)(void)=(int (*)(void))&t;
+19:     printf("%d", (*tp)());
+20:   }
+21: 
+22:   return !!argv[argc];
+23: }
+24: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
+/* end */
+
+PATH=".;C:/RubyMSVC34/lib;C:\RubyMSVC34\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\18\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\\x64;C:\Program Files (x86)\Windows Kits\10\bin\\x64;C:\Program Files\Microsoft Visual Studio\18\Community\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\LLVM\bin;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Git-Xet\;C:\Program Files (x86)\IncrediBuild;C:\Users\leiz\.local\bin;C:\Program Files\wooting-analog-sdk\;C:\Program Files\doxygen\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.1.1\;C:\Program Files\Git\cmd;C:\Program Files\Memurai\;C:\Users\leiz\AppData\Local\Programs\Python\Python312;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\leiz\.cargo\bin;C:\Users\leiz\.lmstudio\bin;C:\Users\leiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leiz\AppData\Local\Programs\Antigravity\bin;C:\Users\leiz\AppData\Local\Programs\Ollama;C:\Users\leiz\AppData\Local\GitHubDesktop\bin;C:\Users\leiz\.local\bin;C:\Users\leiz\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\leiz\.dotnet\tools;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\18\Community\VC\vcpkg" ASAN_OPTIONS=detect_leaks=0 "cl -nologo -Feconftest -IC:/RubyMSVC34/include/ruby-3.4.0/x64-mswin64_140 -IC:/RubyMSVC34/include/ruby-3.4.0/ruby/backward -IC:/RubyMSVC34/include/ruby-3.4.0 -I. -IC:/RubyMSVC34/include/ruby-3.4.0 -IC:/Users/leiz/vcpkg/installed/x64-windows/include  -D_WIN32_WINNT=_WIN32_WINNT_WIN8   -MD -Zi -W2 -wd4100 -wd4127 -wd4210 -wd4214 -wd4255 -wd4574  -wd4668 -wd4710 -wd4711 -wd4820 -wd4996  -we4028 -we4142 -we4047 -we4013 -wd5287 -O2sy- -Zc:inline -Zm600  conftest.c   x64-vcruntime140-ruby340.lib  user32.lib  -link -incremental:no -debug -opt:ref -opt:icf -manifest:embed,ID=2  -libpath:. -libpath:C:/RubyMSVC34/lib -libpath:C:/Users/leiz/vcpkg/installed/x64-windows/lib "
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: 
+13: /*top*/
+14: extern int t(void);
+15: int main(int argc, char **argv)
+16: {
+17:   if (argc > 1000000) {
+18:     int (* volatile tp)(void)=(int (*)(void))&t;
+19:     printf("%d", (*tp)());
+20:   }
+21: 
+22:   return !!argv[argc];
+23: }
+24: extern void rb_enc_interned_str();
+25: int t(void) { rb_enc_interned_str(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_ext_ractor_safe() in ruby.h... -------------------- yes
+
+PATH=".;C:/RubyMSVC34/lib;C:\RubyMSVC34\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\18\Community\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\\x64;C:\Program Files (x86)\Windows Kits\10\bin\\x64;C:\Program Files\Microsoft Visual Studio\18\Community\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\Tools\;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.0\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\PostgreSQL\18\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\LLVM\bin;C:\Program Files\WindowsPowerShell\Scripts;C:\Program Files\Git-Xet\;C:\Program Files (x86)\IncrediBuild;C:\Users\leiz\.local\bin;C:\Program Files\wooting-analog-sdk\;C:\Program Files\doxygen\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2026.1.1\;C:\Program Files\Git\cmd;C:\Program Files\Memurai\;C:\Users\leiz\AppData\Local\Programs\Python\Python312;C:\Users\leiz\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\leiz\.cargo\bin;C:\Users\leiz\.lmstudio\bin;C:\Users\leiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leiz\AppData\Local\Programs\Antigravity\bin;C:\Users\leiz\AppData\Local\Programs\Ollama;C:\Users\leiz\AppData\Local\GitHubDesktop\bin;C:\Users\leiz\.local\bin;C:\Users\leiz\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\leiz\.dotnet\tools;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\18\Community\VC\vcpkg" ASAN_OPTIONS=detect_leaks=0 "cl -nologo -Feconftest -IC:/RubyMSVC34/include/ruby-3.4.0/x64-mswin64_140 -IC:/RubyMSVC34/include/ruby-3.4.0/ruby/backward -IC:/RubyMSVC34/include/ruby-3.4.0 -I. -IC:/RubyMSVC34/include/ruby-3.4.0 -IC:/Users/leiz/vcpkg/installed/x64-windows/include  -D_WIN32_WINNT=_WIN32_WINNT_WIN8   -MD -Zi -W2 -wd4100 -wd4127 -wd4210 -wd4214 -wd4255 -wd4574  -wd4668 -wd4710 -wd4711 -wd4820 -wd4996  -we4028 -we4142 -we4047 -we4013 -wd5287 -O2sy- -Zc:inline -Zm600  conftest.c   x64-vcruntime140-ruby340.lib  user32.lib  -link -incremental:no -debug -opt:ref -opt:icf -manifest:embed,ID=2  -libpath:. -libpath:C:/RubyMSVC34/lib -libpath:C:/Users/leiz/vcpkg/installed/x64-windows/lib "
+conftest.c
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifndef WIN32_LEAN_AND_MEAN
+ 4: #define WIN32_LEAN_AND_MEAN
+ 5: #endif /* WIN32_LEAN_AND_MEAN */
+ 6: #ifndef WIN32
+ 7: #define WIN32
+ 8: #endif /* WIN32 */
+ 9: #include <winsock2.h>
+10: #include <ws2tcpip.h>
+11: #include <windows.h>
+12: #include <ruby.h>
+13: 
+14: /*top*/
+15: extern int t(void);
+16: int main(int argc, char **argv)
+17: {
+18:   if (argc > 1000000) {
+19:     int (* volatile tp)(void)=(int (*)(void))&t;
+20:     printf("%d", (*tp)());
+21:   }
+22: 
+23:   return !!argv[argc];
+24: }
+25: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_ext_ractor_safe; return !p; }
+/* end */
+
+--------------------
+
